@@ -50,7 +50,12 @@ for filename in sorted(listdir(PHOTO_DIRECTORY)):
 	# min_value = np.min(ndvi)
 	# print(max_value, min_value)
 
-	ndvi = 500*ndvi + 127
+	ndvi = 500*ndvi + 127 
+	#emprical value of 255, 127 assumes good white balance
+
+	# max_value = np.max(ndvi)
+	# min_value = np.min(ndvi)
+	# print(max_value, min_value)
 
 	ndvi_gray = np.array(ndvi, dtype = np.uint8)
 
